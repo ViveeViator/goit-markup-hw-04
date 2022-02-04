@@ -160,6 +160,9 @@ img {
 
 /*--------------------------HERO----------------------*/
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--first-title-color);
   text-align: center;
   padding: 200px 0px;
