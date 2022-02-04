@@ -119,10 +119,6 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
 
 .header-tel {
   font-weight: 500;
@@ -132,10 +128,7 @@ img {
   display: flex;
   color: var(--footer-color);
 }
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
+
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -145,19 +138,30 @@ img {
   display: flex;
 }
 
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.header-social-icon {
-  margin-right: 10px;
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
 }
+
 .header-social-icon:focus,
 .header-social-icon:hover {
   fill: var(--accent-color);
 }
-
+.header-social-icon {
+  margin-right: 10px;
+}
 /*--------------------------HERO----------------------*/
 .hero {
   max-width: 1600px;
