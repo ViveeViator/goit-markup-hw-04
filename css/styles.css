@@ -129,7 +129,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
+  display: flex;
   color: var(--footer-color);
 }
 .header-tel:hover,
@@ -142,11 +142,20 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--footer-color);
+  display: flex;
 }
 
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
+}
+
+.header-social-icon {
+  margin-right: 10px;
+}
+.header-social-icon:focus,
+.header-social-icon:hover {
+  fill: var(--accent-color);
 }
 
 /*--------------------------HERO----------------------*/
@@ -202,6 +211,15 @@ img {
 }
 
 /*--------------------------ABAUT----------------------*/
+.about-container {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
 .about-list {
   display: flex;
@@ -344,7 +362,49 @@ img {
 .men-social-link:focus .men-social-icon {
   fill: var(--one-title-color);
 }
+/* ---------------------------------------client---------------------------------- */
 
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+}
+
+.client-social-link {
+  width: 170px;
+  height: 92px;
+  background-color: var(--one-title-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--footer-color);
+}
+.client-social-icon {
+  fill: var(--footer-color);
+}
+
+.client-social-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-social-link:hover,
+.client-social-link:focus {
+  border-color: var(--accent-color);
+}
+
+.client-social-link:hover .client-social-icon,
+.client-social-link:focus .client-social-icon {
+  fill: var(--accent-color);
+}
 /*--------------------------FOOTER----------------------*/
 .spani-logo {
   color: #f5f4fa;
@@ -403,6 +463,60 @@ address {
   font-style: normal;
   margin-top: 20px;
 }
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-social {
+  display: block;
+  margin-left: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footer-social-link:last-child {
+  margin-left: 10px;
+}
+
+.footer-social-icon {
+  fill: var(--one-title-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: var(--one-title-color);
+}
+
 /*----------------------------------------------------PORTFOLIO---------------------------*/
 /*--------------------------ART----------------------*/
 .art {
